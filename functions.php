@@ -30,7 +30,8 @@ add_action('wp_enqueue_scripts', 'cimne_insertar_js');
 
 function cimne_insertar_js(){
 
-	if (is_page( 'cluster' ) || is_page( 'projects-template' )) {
+	//if (is_page( 'cluster' ) || is_page( 'projects-template' )) {
+    if ( is_page( 'projects-template' )) {
 
         wp_register_script('cimne_scripts', get_stylesheet_directory_uri(). '/js/functions.js', array('jquery'), '1', true );
         wp_enqueue_script('cimne_scripts');
@@ -39,10 +40,10 @@ function cimne_insertar_js(){
 }
 
 //Devolver datos a archivo js
-add_action('wp_ajax_nopriv_cimne_ajax_test','cimne_enviar_contenido');
-add_action('wp_ajax_cimne_ajax_test','cimne_enviar_contenido');
+add_action('wp_ajax_nopriv_cimne_ajax_request','cimne_http_request');
+add_action('wp_ajax_cimne_ajax_request','cimne_http_request');
 
-function cimne_enviar_contenido()
+function cimne_http_request()
 {
 
 	$RTDClusterCode = $_POST['id_post'];
@@ -70,10 +71,10 @@ function cimne_enviar_contenido()
 
 // Filtro para agregar contenido a una página de WordPress a través del shortcode [cluster_info]
 
-add_shortcode('cluster_info', 'cimne_add_cluster_info');
+//add_shortcode('cluster_info', 'cimne_add_cluster_info');
 
 // Agregamos contenido sólo a la página con el título "cluster"
-function cimne_add_cluster_info($atts){
+/*function cimne_add_cluster_info($atts){
 
     $default = array(
         'attr' => 'null',
@@ -98,5 +99,5 @@ function cimne_add_cluster_info($atts){
 	//return $html;
 }
 
-
+*/
 // END PAGINA DE CLUSTERS

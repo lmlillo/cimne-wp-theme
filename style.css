@@ -10,3 +10,61 @@ Updated: 2024-01-10 12:47:59
 
 */
 
+div.transparency-menu-sidebar {
+    padding-right: 0px;
+    border-right: none !important;
+}
+.transparency-menu-sidebar .et-menu {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.transparency-menu-sidebar nav.et-menu-nav ul li,
+.transparency-menu-sidebar ul[id^='menu'] li {
+    display: grid;
+    width: 100%;
+    border-top: none !important;
+    border-bottom: 1px solid #fff !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    background-color:rgba(46, 81, 139, 1);
+    height: 58px !important;
+    align-items: center !important;
+}
+.transparency-menu-sidebar nav.et-menu-nav ul li a,
+.transparency-menu-sidebar ul[id^='menu'] li a {
+    font-size: 0.8rem;
+    color: #fff !important;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    padding: 10px 13px !important;
+}
+.transparency-menu-sidebar nav.et-menu-nav li:hover,
+.transparency-menu-sidebar ul[id^='menu'] li:hover {
+    background-color: #5b78a7 !important;
+}
+.transparency-menu-sidebar nav.et-menu-nav a:hover,
+.transparency-menu-sidebar ul[id^='menu'] li a:hover {
+    text-decoration: none;
+    background: none !important;
+}
+
+ul[id^='menu'] li.transparency-menu-sidebar-first-item {
+    display: grid !important;
+    text-align: center !important;
+    background-color: #F2F2F2 !important;   
+
+}
+ul[id^='menu'] li.transparency-menu-sidebar-first-item a {
+    font-family: 'Comfortaa', display;
+    font-size: 18px;
+    color: #F3921A !important;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+ul[id^='menu'] li.transparency-menu-sidebar-first-item:hover,
+ul[id^='menu'] li.transparency-menu-sidebar-first-item a:hover { 
+    color: #F3921A !important;
+    font-weight: bold !important;
+    background-color: #F2F2F2 !important;
+}

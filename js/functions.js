@@ -12,7 +12,7 @@
 		url: cimne_vars.ajaxurl,
 		type: 'post',
 		data: {
-		  action: 'cimne_ajax_test',
+		  action: 'cimne_ajax_request',
 		  id_post: clusterID
 		},
 		success: function(response) {
