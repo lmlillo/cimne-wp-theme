@@ -9,6 +9,10 @@ Version: 4.23.1.1704887279
 Updated: 2024-01-10 12:47:59
 
 */
+div.transparency-blocks-menu:hover {
+    background-color: rgba(0,74,150,0.86) !important;
+    color: #fff !important;
+}
 
 div.transparency-menu-sidebar {
     padding-right: 0px;
@@ -67,4 +71,20 @@ ul[id^='menu'] li.transparency-menu-sidebar-first-item a:hover {
     color: #F3921A !important;
     font-weight: bold !important;
     background-color: #F2F2F2 !important;
+}
+
+a.transparency-button {
+    background-color: rgba(0,74,150,0.86) !important;
+    color: #fff !important;
+    border-radius: 0px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 12px;
+    border: none !important;    
+}
+a.transparency-button:hover {
+    background-color: rgba(0,74,150,1) !important;
+    color: #fff !important;
 }
